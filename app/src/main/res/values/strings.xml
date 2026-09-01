@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">IMC</string>
+    <string name="btn_toggle_theme">Cambiar Tema (Claro/Oscuro)</string>
+
+    <!-- MainActivity -->
+    <string name="main_title">Calculadora de IMC</string>
+    <string name="hint_weight">Peso (kg)</string>
+    <string name="hint_height">Estatura (cm)</string>
+    <string name="btn_calculate">Calcular IMC</string>
+    <string name="btn_view_history">Ver Historial</string>
+    <string name="toast_empty_fields">Por favor ingresa peso y estatura</string>
+
+    <!-- ResultActivity -->
+    <string name="result_status_format">Estado: %1$s</string>
+    <string name="result_bmi_format">IMC: %.2f</string>
+    <string name="btn_back_main">Volver a la Página Principal</string>
+
+    <!-- HistoryActivity -->
+    <string name="history_title">Historial de Mediciones</string>
+    <string name="history_empty">No hay mediciones registradas.</string>
+    <string name="history_item_date">Fecha: %1$s</string>
+    <string name="history_item_details">Peso: %1$.1f kg | Estatura: %2$.1f cm</string>
+    <string name="history_item_result">Resultado: %1$.2f (%2$s)</string>
+
+    <!-- Categorías del IMC -->
+    <string name="status_underweight">Bajo peso</string>
+    <string name="status_normal">Peso normal</string>
+    <string name="status_overweight">Sobrepeso</string>
+    <string name="status_obesity">Obesidad</string>
+</resources>

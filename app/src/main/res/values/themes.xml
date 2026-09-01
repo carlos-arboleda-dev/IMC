@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema base de la aplicación -->
+    <style name="Base.Theme.IMC" parent="Theme.Material3.DayNight.NoActionBar"/>
+
+    <style name="Theme.IMC" parent="Base.Theme.IMC" />
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@android:color/white</item>
+
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_dialog_info</item>
+
+        <item name="postSplashScreenTheme">@style/Base.Theme.IMC</item>
+    </style>
+</resources>

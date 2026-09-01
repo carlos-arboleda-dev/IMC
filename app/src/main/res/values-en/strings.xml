@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="btn_toggle_theme">Toggle Theme (Light/Dark)</string>
+
+    <!-- MainActivity -->
+    <string name="main_title">BMI Calculator</string>
+    <string name="hint_weight">Weight (kg)</string>
+    <string name="hint_height">Height (cm)</string>
+    <string name="btn_calculate">Calculate BMI</string>
+    <string name="btn_view_history">View History</string>
+    <string name="toast_empty_fields">Please enter weight and height</string>
+
+    <!-- ResultActivity -->
+    <string name="result_status_format">Status: %1$s</string>
+    <string name="result_bmi_format">BMI: %.2f</string>
+    <string name="btn_back_main">Return to Main Page</string>
+
+    <!-- HistoryActivity -->
+    <string name="history_title">Measurement History</string>
+    <string name="history_empty">No measurements recorded.</string>
+    <string name="history_item_date">Date: %1$s</string>
+    <string name="history_item_details">Weight: %1$.1f kg | Height: %2$.1f cm</string>
+    <string name="history_item_result">Result: %1$.2f (%2$s)</string>
+
+    <!-- Categorías del IMC -->
+    <string name="status_underweight">Underweight</string>
+    <string name="status_normal">Normal weight</string>
+    <string name="status_overweight">Overweight</string>
+    <string name="status_obesity">Obesity</string>
+</resources>
