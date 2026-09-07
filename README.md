@@ -4,14 +4,16 @@ Aplicación móvil nativa desarrollada en Android Studio con Kotlin para la gest
 
 ---
 
-## 🚀 Características Principales
+## 📄 Descripción Funcional
 
-* **Cálculo de IMC en Tiempo Real:** Procesa peso (kg) y estatura (cm) para determinar el estado de salud del usuario con base en rangos estándar.
-* **Resultados Dinámicos:** Muestra la clasificación de salud acompañada de recursos visuales e identificadores correspondientes.
-* **Historial de Mediciones:** Registro cronológico estructurado de mediciones con fecha, hora y datos métricos detallados.
-* **Internacionalización (i18n):** Soporte multiidioma dinámico (Español e Inglés) gestionado mediante recursos nativos (`strings.xml`).
-* **Soporte de Tema Dinámico:** Alternancia entre Modo Oscuro y Modo Claro mediante `AppCompatDelegate`.
-* **Splash Screen API:** Pantalla de bienvenida oficial mediante `androidx.core:core-splashscreen`.
+La aplicación está diseñada bajo una arquitectura Android multi-pantalla (`Multi-Activity`) orientada al flujo continuo de usuario:
+
+* **Módulo de Entrada y Cálculo:** Captura el peso ($kg$) y la estatura ($cm$) del usuario, realiza la conversión métrica e implementa el cálculo del IMC. Determina dinámicamente la clasificación del usuario (Bajo peso, Peso normal, Sobrepeso, Obesidad).
+* **Módulo de Diagnóstico e Imagen:** Presenta la evaluación antropométrica final junto con indicadores gráficos específicos para cada rango de salud y opciones de retorno seguro al menú principal.
+* **Módulo de Historial Persistente:** Mantiene una bitácora en memoria de todas las evaluaciones ejecutadas en la sesión. Cada registro almacena fecha, hora, peso, estatura, IMC obtenido y diagnóstico asociado, ordenados cronológicamente.
+* **Internacionalización y Soporta Multi-idioma:** Gestión completa de recursos de texto para soporte dinámico en Español e Inglés mediante recursos nativos (`strings.xml`).
+* **Gestión de Tema Visual:** Botón de alternancia global entre Modo Claro y Modo Oscuro mediante la API `AppCompatDelegate`.
+* **Splash Screen Nativo:** Pantalla de bienvenida oficial configurada desde temas del sistema mediante la librería `androidx.core:core-splashscreen`.
 
 ---
 
@@ -35,3 +37,9 @@ app/src/main/java/com/example/imc/
 ├── MainActivity.kt      # Pantalla principal (Formulario, Cálculo, Tema)
 ├── ResultActivity.kt    # Visualización del resultado e imagen asignada
 └── HistoryActivity.kt   # Presentación del historial de registros
+
+---
+
+👤 Autor
+
+Carlos Cesar Arboleda — Desarrollador Principal
